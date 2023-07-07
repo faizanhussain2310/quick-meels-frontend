@@ -38,7 +38,7 @@ export async function action({ request }) {
 
   // console.log(loginDetails);
 
-  const response = await fetch("http://localhost:8080/auth/login", {
+  const response = await fetch("https://quick-meels-backend.onrender.com/auth/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
