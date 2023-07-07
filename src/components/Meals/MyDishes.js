@@ -68,7 +68,7 @@ export async function loader() {
     return redirect("/login");
   }
 
-  const response = await fetch("http://localhost:8080/feed/my-meels", {
+  const response = await fetch("https://quick-meels-backend.onrender.com/feed/my-meels", {
     method: "GET",
     headers: {
       "Authorization": "Bearer " + token,
