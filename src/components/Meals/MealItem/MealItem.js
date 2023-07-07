@@ -23,7 +23,7 @@ const MealItem = (props) => {
     const cartDetails = {
       id: props.id,
     };
-    const response = await fetch("http://localhost:8080/feed/add-to-cart", {
+    const response = await fetch("https://quick-meels-backend.onrender.com/feed/add-to-cart", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
