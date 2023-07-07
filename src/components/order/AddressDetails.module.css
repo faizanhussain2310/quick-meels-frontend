@@ -1,0 +1,13 @@
+.form {
+  margin: 1.5rem 0;
+  /* height: 19rem; */
+  overflow: auto;
+}
+
+.control {
+  margin-bottom: 1rem;
+}
+
+.control h3 {
+  color: #8a2b06;
+}
