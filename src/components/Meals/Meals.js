@@ -20,7 +20,7 @@ const Meals = () => {
 export default Meals;
 
 export async function loader() {
-  const response = await fetch("http://localhost:8080/feed/meels");
+  const response = await fetch("https://quick-meels-backend.onrender.com/feed/meels");
   if (response.status !== 200) {
     const { message } = await response.json();
     throw new json({ message: message });
