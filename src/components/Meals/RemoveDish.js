@@ -4,7 +4,7 @@ export async function action({ params, request }) {
   const dishId = params.dishId;
   const token = localStorage.getItem("token");
   const response = await fetch(
-    "http://localhost:8080/feed/my-meels/delete/" + dishId,
+    "https://quick-meels-backend.onrender.com/feed/my-meels/delete/" + dishId,
     {
       method: "POST",
       headers: {
