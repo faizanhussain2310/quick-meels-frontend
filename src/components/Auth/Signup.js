@@ -69,7 +69,7 @@ export async function action({ request }) {
 
   // console.log(signupDetails);
 
-  const response = await fetch("http://localhost:8080/auth/signup", {
+  const response = await fetch("https://quick-meels-backend.onrender.com/auth/signup", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
