@@ -72,7 +72,7 @@ export async function loader({ params, request }) {
     return redirect("/login");
   }
   const response = await fetch(
-    "http://localhost:8080/feed/my-meels/edit/" + dishId,
+    "https://quick-meels-backend.onrender.com/feed/my-meels/edit/" + dishId,
     {
       method: "GET",
       headers: {
@@ -102,7 +102,7 @@ export async function action({ params, request }) {
   };
   console.log("MEELDETAILS = ", meelDetails);
   const response = await fetch(
-    "http://localhost:8080/feed/my-meels/edit/" + dishId,
+    "https://quick-meels-backend.onrender.com/feed/my-meels/edit/" + dishId,
     {
       method: "POST",
       headers: {
