@@ -71,7 +71,7 @@ export async function action({ request }) {
   };
   const token = localStorage.getItem("token");
   console.log("ORDERDETAILS = ", orderDetails);
-  const response = await fetch("http://localhost:8080/feed/orders", {
+  const response = await fetch("https://quick-meels-backend.onrender.com/feed/orders", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
